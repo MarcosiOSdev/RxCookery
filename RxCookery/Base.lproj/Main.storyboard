@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxCookery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8re-Cj-f5f">
+                                <rect key="frame" x="0.0" y="194" width="414" height="668"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2oK-E8-EbL">
+                                <rect key="frame" x="8" y="52" width="187" height="144"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5b-TY-0NF">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="30"/>
+                                        <state key="normal" title="Action"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYY-q2-qSl">
+                                        <rect key="frame" x="0.0" y="38" width="97" height="30"/>
+                                        <state key="normal" title="Save RxRealm"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aT-GL-PT6">
+                                        <rect key="frame" x="0.0" y="76" width="185" height="30"/>
+                                        <state key="normal" title="Delete all datas in RxRealm"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2LM-Uh-ODK">
+                                        <rect key="frame" x="0.0" y="114" width="187" height="30"/>
+                                        <state key="normal" title="Delete last data in RxRealm"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsb-S5-JvL">
+                                <rect key="frame" x="336" y="60" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.33236522071962638" green="1" blue="0.48321262852333691" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="QR2-Gn-zqd"/>
+                                    <constraint firstAttribute="height" constant="70" id="afi-iA-ea0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8re-Cj-f5f" secondAttribute="trailing" id="1tf-AB-k76"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8re-Cj-f5f" secondAttribute="bottom" id="N9d-f0-s4H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tsb-S5-JvL" secondAttribute="trailing" constant="8" id="QHe-8l-ucX"/>
+                            <constraint firstItem="2oK-E8-EbL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Rmq-9A-CBO"/>
+                            <constraint firstItem="8re-Cj-f5f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="ctL-RE-dO8"/>
+                            <constraint firstItem="8re-Cj-f5f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j28-8Y-Hdb"/>
+                            <constraint firstItem="2oK-E8-EbL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="jul-0z-oz0"/>
+                            <constraint firstItem="Tsb-S5-JvL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="swH-pE-SQG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="D5b-TY-0NF" id="SJR-hA-cTE"/>
+                        <outlet property="addDataButton" destination="oYY-q2-qSl" id="oPu-wM-rLj"/>
+                        <outlet property="deleteAllDatasButton" destination="7aT-GL-PT6" id="Ga7-pK-KfD"/>
+                        <outlet property="deleteLastDataButton" destination="2LM-Uh-ODK" id="FwK-0k-QCZ"/>
+                        <outlet property="greenView" destination="Tsb-S5-JvL" id="AkL-pg-cDP"/>
+                        <outlet property="tableView" destination="8re-Cj-f5f" id="LfC-I5-v7I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
